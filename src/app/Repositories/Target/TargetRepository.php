@@ -3,7 +3,7 @@
 use App\Models\Target;
 use Illuminate\Support\Collection;
 
-class TargetRepository implements TargetRepositryInterface
+class TargetRepository implements TargetRepositoryInterface
 {
     /**
      * {@inheritDoc}

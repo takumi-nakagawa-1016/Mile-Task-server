@@ -3,7 +3,7 @@
 use App\Models\Target;
 use Illuminate\Support\Collection;
 
-interface TargetRepositryInterface
+interface TargetRepositoryInterface
 {
     /**
      * @return Collection<Target>
