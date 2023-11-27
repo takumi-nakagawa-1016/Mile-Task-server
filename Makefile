@@ -11,9 +11,15 @@ create-controller:
 	docker-compose exec web bundle exec rails generate controller NAME=$(name)
 
 # モデルを作成
-create-model:
+m:
 	docker-compose exec web bundle exec rails generate model NAME=$(name)
 
 # シーダーを作成
 create-seeder:
 	docker-compose exec web bundle exec rails generate seeder NAME=$(name)
+
+seed: 
+	docker-compose exec web bundle exec rails db:seed
+
+migrate:
+	docker-compose exec web bundle exec rails db:migrate
